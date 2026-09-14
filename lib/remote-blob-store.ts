@@ -6,6 +6,8 @@ export const remoteBlobStore: SessionStore = {
     const result = await get(`remote/v2/${id}.json`, {
       access: "private",
       useCache: false,
+      // Compression weakens the ETag, which cannot be used for an If-Match write.
+      headers: { "Accept-Encoding": "identity" },
     });
     if (!result || !result.stream) return null;
     return {
