@@ -1,0 +1,121 @@
+/* A 1080 × 1920 composition, delivered as lossless 2160 × 3840 artwork. */
+html,
+.presentation:fullscreen {
+  scrollbar-width: none;
+}
+html::-webkit-scrollbar,
+.presentation:fullscreen::-webkit-scrollbar {
+  display: none;
+}
+.slide-art > picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.portrait-deck .slide-art {
+  aspect-ratio: 9 / 16;
+  max-width: 56.25svh;
+}
+.presentation.portrait-deck:fullscreen .slide-art {
+  max-width: 56.25dvh;
+}
+.portrait-deck .character-film,
+.portrait-deck .illustration-detail {
+  left: var(--portrait-left) !important;
+  top: var(--portrait-top) !important;
+  width: var(--portrait-width) !important;
+  height: var(--portrait-height) !important;
+  display: var(--portrait-display, none);
+}
+.portrait-deck .story-preview {
+  left: 5% !important;
+  top: 3.385417%;
+  width: 43.888889%;
+  height: 44.21875%;
+}
+.portrait-deck .story-preview:nth-child(even) {
+  left: 51.111111% !important;
+}
+.portrait-deck .story-preview:nth-child(n + 3) {
+  top: 48.697917%;
+}
+.portrait-deck .stories-gallery-hint {
+  top: 95%;
+  font-size: clamp(8px, 1.2vw, 25px);
+}
+.portrait-deck .index-grid img {
+  aspect-ratio: 9 / 16;
+}
+.portrait-deck .deck-controls {
+  bottom: max(12px, env(safe-area-inset-bottom));
+}
+.portrait-deck .deck-controls button {
+  width: clamp(32px, 3vw, 72px);
+  height: clamp(32px, 3vw, 72px);
+}
+.portrait-deck .deck-controls button svg {
+  width: 48%;
+  height: 48%;
+}
+.portrait-deck .page-count {
+  font-size: clamp(10px, 1.2vw, 26px);
+}
+
+@media (orientation: portrait) {
+  .slide-art {
+    aspect-ratio: 9 / 16;
+    max-width: 56.25svh;
+  }
+  .presentation:fullscreen .slide-art {
+    max-width: 56.25dvh;
+  }
+  .character-film,
+  .illustration-detail {
+    left: var(--portrait-left) !important;
+    top: var(--portrait-top) !important;
+    width: var(--portrait-width) !important;
+    height: var(--portrait-height) !important;
+    display: var(--portrait-display, none);
+  }
+  .story-preview {
+    left: 5% !important;
+    top: 3.385417%;
+    width: 43.888889%;
+    height: 44.21875%;
+  }
+  .story-preview:nth-child(even) {
+    left: 51.111111% !important;
+  }
+  .story-preview:nth-child(n + 3) {
+    top: 48.697917%;
+  }
+  .stories-gallery-hint {
+    top: 95%;
+    font-size: clamp(8px, 1.2vw, 25px);
+  }
+  .index-grid img {
+    aspect-ratio: 9 / 16;
+  }
+  .deck-controls {
+    bottom: max(12px, env(safe-area-inset-bottom));
+  }
+  .deck-controls button {
+    width: clamp(32px, 3vw, 72px);
+    height: clamp(32px, 3vw, 72px);
+  }
+  .deck-controls button svg {
+    width: 48%;
+    height: 48%;
+  }
+  .page-count {
+    font-size: clamp(10px, 1.2vw, 26px);
+  }
+}
+@media print {
+  .portrait-deck .slide {
+    aspect-ratio: 9 / 16;
+  }
+  .portrait-deck .slide-art {
+    max-width: none;
+  }
+}

@@ -1,0 +1,17 @@
+node_modules/
+.next/
+.cache/
+tmp/
+.git/
+.vercel/
+.env*
+*.tsbuildinfo
+scripts/
+test-results/
+playwright-report/
+public/slides/*.svg
+public/media/character-*.png
+public/media/provenance.json
+public/stories/*.png
+AGENTS.md
+CLAUDE.md

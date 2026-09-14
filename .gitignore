@@ -1,0 +1,16 @@
+node_modules/
+.next/
+.cache/
+tmp/
+.env*
+!.env.example
+test-results/
+playwright-report/
+*.tsbuildinfo
+
+.vercel
+.env*
+public/slides/*.svg
+public/media/character-*.png
+public/media/provenance.json
+public/stories/*.png
